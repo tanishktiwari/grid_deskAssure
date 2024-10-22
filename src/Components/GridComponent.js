@@ -11,7 +11,6 @@ const GridComponent = () => {
         <div className="text-block-16">
           <div className="web-element element-header" id="element-id-header">
             <div className="element-header-wrapper">
-              // No import needed, just reference the public URL
               <div className="element-header-logo">
                 <img src={`${process.env.PUBLIC_URL}/Logo.png`} alt="Logo" />
               </div>
