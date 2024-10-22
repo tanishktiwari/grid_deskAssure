@@ -4,6 +4,7 @@ import "./default.css";
 import "./grid-en.css";
 import "./normalize.css";
 
+
 const GridComponent = () => {
   return (
     <div>
@@ -12,7 +13,7 @@ const GridComponent = () => {
           <div className="web-element element-header" id="element-id-header">
             <div className="element-header-wrapper">
               <div className="element-header-logo">
-                <img src={`${process.env.PUBLIC_URL}/Logo.png`} alt="Logo" />
+                <img src="./logo.png" className=""></img>
               </div>
               <nav className="element-header-nav" role="navigation">
                 <div className="element-header-nav-container">
@@ -20,15 +21,16 @@ const GridComponent = () => {
                     <div className="element-header-nav-list-wrapper">
                       <ul className="element-header-nav-list" role="list">
                         <li className="element-header-nav-item">
-                          <a
-                            className="web-button web-button-theme bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
-                            href="http://console.deskassure.com/user-login"
-                            rel="nofollow noopener noreferrer"
-                            target="_blank"
-                          >
-                            Go to Console
-                          </a>
-                        </li>
+  <a
+    className="web-button web-button-theme bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
+    href="http://console.deskassure.com/user-login"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Go to Console
+  </a>
+</li>
+
                       </ul>
                     </div>
                   </div>
@@ -53,57 +55,28 @@ const GridComponent = () => {
                       className="input-destination"
                       id="destination"
                       maxLength="255"
-                      placeholder="Enter a destination"
+                      placeholder="Enter Ticket Number"
                       type="text"
                       defaultValue=""
                     />
                   </div>
                   <div className="border-one"></div>
-                  <div className="filter-chargingspeed">
-                    <label
-                      className="label-chargingspeed"
-                      htmlFor="chargingspeed"
-                    >
-                      Charging power
-                    </label>
-                    <input
-                      className="input-chargingspeed"
-                      id="chargingspeed"
-                      maxLength="255"
-                      type="text"
-                      defaultValue=">0kWh"
-                    />
-                    <div className="filter-chargingspeed-popup">
-                      <div className="top">
-                        <div className="power-text">Charging power in kW</div>
-                        <div className="power-values" id="power-values">
-                          0 kW - 250 kW
-                        </div>
-                      </div>
-                      <div className="range-slider">
-                        <input
-                          id="chargingspeed-min"
-                          min="0"
-                          max="250"
-                          step="5"
-                          type="range"
-                          defaultValue="0"
-                        />
-                        <input
-                          id="chargingspeed-max"
-                          min="0"
-                          max="250"
-                          step="5"
-                          type="range"
-                          defaultValue="250"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                  <div className="filter-engineer mt-2 text-lg">
+ 
+  <select className="input-engineer" id="engineer-select">
+    <option value="">-- Select Engineer --</option>
+    <option value="engineer1">Engineer 1</option>
+    <option value="engineer2">Engineer 2</option>
+    <option value="engineer3">Engineer 3</option>
+    <option value="engineer4">Engineer 4</option>
+    {/* Add more engineers as needed */}
+  </select>
+</div>
+
                   <div className="border-two"></div>
                   <div className="filter-available">
                     <label className="label-available" htmlFor="available">
-                      Available now
+                      Ticket Status
                     </label>
                     <label className="input-available">
                       <input
@@ -114,7 +87,7 @@ const GridComponent = () => {
                       <span
                         className="input-available-switch"
                         data-on="Yes"
-                        data-off="No"
+                        data-off="Closed"
                       ></span>
                     </label>
                   </div>
@@ -188,8 +161,8 @@ const GridComponent = () => {
                   open tickets are assigned captains ready to assist you.
                 </p>
               </div>
-              <a href="" className="button-primary on-green w-button">
-                find charging stations nearby
+              <a href="" className="button-primary on-green w-button ">
+                <b>Track your Service Agent</b>
               </a>
             </div>
           </div>
@@ -275,7 +248,7 @@ const GridComponent = () => {
               rel="noopener noreferrer"
             >
               <strong className="text-white ideal">
-                Find your ideal charging station
+                Open your first Deskassure Ticket now
               </strong>
             </a>
           </div>
@@ -385,14 +358,14 @@ const GridComponent = () => {
                 <div className="element-footer-nav">
                   <ul className="element-footer-nav-list">
                     <li className="element-footer-nav-item">
-                      <a
-                        href="http://console.deskassure.com/user-login"
-                        rel="nofollow noopener noreferrer"
-                        target="_blank"
-                      >
-                        Go to Console
-                      </a>
-                    </li>
+  <a
+    href="http://console.deskassure.com/user-login"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Go to Console
+  </a>
+</li>
 
                     <li className="element-footer-nav-item">
                       <a href="">Blogs</a>
