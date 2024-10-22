@@ -13,7 +13,7 @@ const GridComponent = () => {
           <div className="web-element element-header" id="element-id-header">
             <div className="element-header-wrapper">
               <div className="element-header-logo">
-                <img src="./logo.png" className=""></img>
+                <img src="./Logo.png" className=""></img>
               </div>
               <nav className="element-header-nav" role="navigation">
                 <div className="element-header-nav-container">
