@@ -20,15 +20,16 @@ const GridComponent = () => {
                     <div className="element-header-nav-list-wrapper">
                       <ul className="element-header-nav-list" role="list">
                         <li className="element-header-nav-item">
-                          <a
-                            className="web-button web-button-theme bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
-                            href=""
-                            rel="nofollow noopener noreferrer"
-                            target="_blank"
-                          >
-                            Go to Console
-                          </a>
-                        </li>
+  <a
+    className="web-button web-button-theme bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
+    href="http://console.deskassure.com/user-login"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Go to Console
+  </a>
+</li>
+
                       </ul>
                     </div>
                   </div>
@@ -385,14 +386,15 @@ const GridComponent = () => {
                 <div className="element-footer-nav">
                   <ul className="element-footer-nav-list">
                     <li className="element-footer-nav-item">
-                      <a
-                        href=""
-                        rel="nofollow noopener noreferrer"
-                        target="_blank"
-                      >
-                        Go to Console
-                      </a>
-                    </li>
+  <a
+    href="http://console.deskassure.com/user-login"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Go to Console
+  </a>
+</li>
+
                     <li className="element-footer-nav-item">
                       <a href="">Blogs</a>
                     </li>
