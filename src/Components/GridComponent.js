@@ -13,7 +13,7 @@ const GridComponent = () => {
             <div className="element-header-wrapper">
               // No import needed, just reference the public URL
               <div className="element-header-logo">
-                <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+                <img src={`${process.env.PUBLIC_URL}/Logo.png`} alt="Logo" />
               </div>
               <nav className="element-header-nav" role="navigation">
                 <div className="element-header-nav-container">
