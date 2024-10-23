@@ -12,13 +12,15 @@ const GridComponent = () => {
           <div className="web-element element-header" id="element-id-header">
             <div className="element-header-wrapper">
               <div className="element-header-logo">
-                <a
-                  href="https://www.deskassure.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="./Logo.png" alt="Logo" />
-                </a>
+                <img
+                  src="./Logo.png"
+                  className=""
+                  alt="Logo"
+                  onClick={() =>
+                    (window.location.href = "https://www.deskassure.com/")
+                  }
+                  style={{ cursor: "pointer" }}
+                />
               </div>
 
               <nav className="element-header-nav" role="navigation">
