@@ -31,7 +31,7 @@ const GridComponent = () => {
                         <li className="element-header-nav-item">
                           <a
                             className="web-button web-button-theme bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
-                            href="http://console.deskassure.com/user-login"
+                            href="http://console.deskassure.com"
                             rel="nofollow noopener noreferrer"
                             target="_blank"
                           >
@@ -228,7 +228,7 @@ const GridComponent = () => {
                 src="https://grid.com/web/images/np_up_1581624_0DBC81.svg"
                 width="58"
                 alt=""
-                className="image-16"
+                className="image-16 arrow-image"
                 style={{
                   filter:
                     "invert(56%) sepia(76%) saturate(389%) hue-rotate(6deg) brightness(97%) contrast(93%)",
@@ -245,7 +245,7 @@ const GridComponent = () => {
               to all your problems.
             </p>
             <a
-              href="http://console.deskassure.com/user-login"
+              href="http://console.deskassure.com"
               rel="nofollow noopener noreferrer"
               target="_blank"
             >
@@ -361,7 +361,7 @@ const GridComponent = () => {
                   <ul className="element-footer-nav-list">
                     <li className="element-footer-nav-item">
                       <a
-                        href="http://console.deskassure.com/user-login"
+                        href="http://console.deskassure.com"
                         rel="nofollow noopener noreferrer"
                         target="_blank"
                       >
