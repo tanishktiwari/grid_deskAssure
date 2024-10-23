@@ -22,7 +22,7 @@ const GridComponent = () => {
                         <li className="element-header-nav-item">
                           <a
                             className="web-button web-button-theme bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
-                            href="http://console.deskassure.com/user-login"
+                            href="http://console.deskassure.com"
                             rel="nofollow noopener noreferrer"
                             target="_blank"
                           >
@@ -239,7 +239,7 @@ const GridComponent = () => {
               to all your problems.
             </p>
             <a
-              href="http://console.deskassure.com/user-login"
+              href="http://console.deskassure.com"
               rel="nofollow noopener noreferrer"
               target="_blank"
             >
@@ -355,7 +355,7 @@ const GridComponent = () => {
                   <ul className="element-footer-nav-list">
                     <li className="element-footer-nav-item">
                       <a
-                        href="http://console.deskassure.com/user-login"
+                        href="http://console.deskassure.com"
                         rel="nofollow noopener noreferrer"
                         target="_blank"
                       >
