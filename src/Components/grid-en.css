@@ -3,7 +3,7 @@
               linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: contain;
   max-width: 545px;
   max-height: 550px;
   padding-bottom: 0;
@@ -59,13 +59,13 @@
 
 .overlay-image {
     position: absolute; /* Positioning to overlay the image */
-    top: -40px; /* Adjust position as needed */
+    top: 20px; /* Adjust position as needed */
     left: 50%; /* Center the image horizontally */
     transform: translateX(-50%); /* Adjust position to center */
     /* width: auto; Adjust width as necessary */
     height: auto; /* Maintain aspect ratio */
     border-radius: 15px; /* Match rounded corners */
-    height: 105%;
+    height: 90%;
 }
 
 
@@ -1556,7 +1556,7 @@ h3.heading-5.red.left.solutions {
   background-position: 0 0;
   background-size: cover;
   max-height: 700px;
-/*   height: 700px; */
+  /* height: 700px; */
   border-radius: 20px;
 }
 
