@@ -4,7 +4,6 @@ import "./default.css";
 import "./grid-en.css";
 import "./normalize.css";
 
-
 const GridComponent = () => {
   return (
     <div>
@@ -13,7 +12,7 @@ const GridComponent = () => {
           <div className="web-element element-header" id="element-id-header">
             <div className="element-header-wrapper">
               <div className="element-header-logo">
-                <img src="./Logo.png" className=""></img>
+                <img src="./logo.png" className=""></img>
               </div>
               <nav className="element-header-nav" role="navigation">
                 <div className="element-header-nav-container">
@@ -21,16 +20,15 @@ const GridComponent = () => {
                     <div className="element-header-nav-list-wrapper">
                       <ul className="element-header-nav-list" role="list">
                         <li className="element-header-nav-item">
-  <a
-    className="web-button web-button-theme bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
-    href="http://console.deskassure.com/user-login"
-    rel="nofollow noopener noreferrer"
-    target="_blank"
-  >
-    Go to Console
-  </a>
-</li>
-
+                          <a
+                            className="web-button web-button-theme bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
+                            href="http://console.deskassure.com/user-login"
+                            rel="nofollow noopener noreferrer"
+                            target="_blank"
+                          >
+                            Go to Console
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -62,16 +60,15 @@ const GridComponent = () => {
                   </div>
                   <div className="border-one"></div>
                   <div className="filter-engineer mt-2 text-lg">
- 
-  <select className="input-engineer" id="engineer-select">
-    <option value="">-- Select Engineer --</option>
-    <option value="engineer1">Engineer 1</option>
-    <option value="engineer2">Engineer 2</option>
-    <option value="engineer3">Engineer 3</option>
-    <option value="engineer4">Engineer 4</option>
-    {/* Add more engineers as needed */}
-  </select>
-</div>
+                    <select className="input-engineer" id="engineer-select">
+                      <option value="">-- Select Engineer --</option>
+                      <option value="engineer1">Engineer 1</option>
+                      <option value="engineer2">Engineer 2</option>
+                      <option value="engineer3">Engineer 3</option>
+                      <option value="engineer4">Engineer 4</option>
+                      {/* Add more engineers as needed */}
+                    </select>
+                  </div>
 
                   <div className="border-two"></div>
                   <div className="filter-available">
@@ -242,10 +239,9 @@ const GridComponent = () => {
               to all your problems.
             </p>
             <a
-              href=""
+              href="http://console.deskassure.com/user-login"
+              rel="nofollow noopener noreferrer"
               target="_blank"
-              className="button-primary centre w-button bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
-              rel="noopener noreferrer"
             >
               <strong className="text-white ideal">
                 Open your first Deskassure Ticket now
@@ -292,7 +288,7 @@ const GridComponent = () => {
             className="unique-div-background"
           >
             <img
-              src="https://grid.com/web/images/--_EN.webp"
+              src="./desk_assure_3.gif"
               alt="Descriptive Alt Text"
               className="overlay-image"
             />
@@ -358,14 +354,14 @@ const GridComponent = () => {
                 <div className="element-footer-nav">
                   <ul className="element-footer-nav-list">
                     <li className="element-footer-nav-item">
-  <a
-    href="http://console.deskassure.com/user-login"
-    rel="nofollow noopener noreferrer"
-    target="_blank"
-  >
-    Go to Console
-  </a>
-</li>
+                      <a
+                        href="http://console.deskassure.com/user-login"
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                      >
+                        Go to Console
+                      </a>
+                    </li>
 
                     <li className="element-footer-nav-item">
                       <a href="">Blogs</a>
