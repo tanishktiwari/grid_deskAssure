@@ -12,8 +12,15 @@ const GridComponent = () => {
           <div className="web-element element-header" id="element-id-header">
             <div className="element-header-wrapper">
               <div className="element-header-logo">
-                <img src="./Logo.png" className=""></img>
+                <a
+                  href="https://www.deskassure.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="./Logo.png" alt="Logo" />
+                </a>
               </div>
+
               <nav className="element-header-nav" role="navigation">
                 <div className="element-header-nav-container">
                   <div className="element-header-nav-list-container">
@@ -22,7 +29,7 @@ const GridComponent = () => {
                         <li className="element-header-nav-item">
                           <a
                             className="web-button web-button-theme bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
-                            href="http://console.deskassure.com"
+                            href="http://console.deskassure.com/user-login"
                             rel="nofollow noopener noreferrer"
                             target="_blank"
                           >
@@ -173,7 +180,7 @@ const GridComponent = () => {
           >
             <h2 className="title zwart now">Now enjoy Zero Downtime</h2>
             <h3 className="heading-5 white">With DeskAssure ZERO</h3>
-            <p className="paragraph-7 black">
+            <p className="paragraph-7 black font-bold">
               Experience personalized support like never before. Our
               customizable support console allows you to tailor your
               interactions with customers, making them feel valued and
@@ -228,9 +235,6 @@ const GridComponent = () => {
             </div>
           </a>
           <div className="div-block-18">
-            <h3 className="heading-5 green centre">
-              search, find and navigate
-            </h3>
             <p className="paragraph-7 white map centre">
               With one simple click, we connect and give your visibility to the
               nearest service captains in your area. No more hassle with endless
@@ -239,7 +243,7 @@ const GridComponent = () => {
               to all your problems.
             </p>
             <a
-              href="http://console.deskassure.com"
+              href="http://console.deskassure.com/user-login"
               rel="nofollow noopener noreferrer"
               target="_blank"
             >
@@ -355,7 +359,7 @@ const GridComponent = () => {
                   <ul className="element-footer-nav-list">
                     <li className="element-footer-nav-item">
                       <a
-                        href="http://console.deskassure.com"
+                        href="http://console.deskassure.com/user-login"
                         rel="nofollow noopener noreferrer"
                         target="_blank"
                       >
