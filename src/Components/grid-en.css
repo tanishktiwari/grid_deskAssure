@@ -1,3 +1,9 @@
+.image-16 {
+    align-self: center;
+    top: -50px;
+    left: -75px;
+    position: relative;
+    }
 .div-block-16.image.zoek {
   background: url('../../public/desk_assure_laptop.gif') center center no-repeat, 
               linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444);
