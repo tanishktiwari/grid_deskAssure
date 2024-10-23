@@ -1,9 +1,9 @@
 .div-block-16.image.zoek {
-  background: url('https://grid.com/web/images/SEARCH.webp') center center / cover no-repeat, 
+  background: url('../../public/desk_assure_laptop.gif') center center no-repeat, 
               linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   max-width: 545px;
   max-height: 550px;
   padding-bottom: 0;
@@ -1552,10 +1552,12 @@ h3.heading-5.red.left.solutions {
 
 .div-block-16.image.detail {
   background-color: var(--white-smoke);
-  background-image: url('https://grid.com/web/images/Car.webp');
+  background-image: url('../../public/desk_assure_2.gif');
   background-position: 0 0;
   background-size: cover;
   max-height: 700px;
+  height: 700px;
+  border-radius: 20px;
 }
 
 .div-block-16.image.rit {
@@ -11176,7 +11178,7 @@ p.paragraph-7 {
 }
 
 div#w-node-d00632f3-03fb-2032-d93a-9f5d59610c86-117adce6 {
-    height: 100%;
+    height: 95%;
 }
 h2.title {
     line-height: 109%;
