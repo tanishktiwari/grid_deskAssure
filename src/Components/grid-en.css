@@ -25,10 +25,14 @@
   height: 106%;
 } */
 .unique-div-voorkeur {
-  background: url('https://grid.com/web/images/Choose-car.webp') center / 751px 563px repeat-x, 
+  background: url('../../public/image_lap_4.gif') center / 751px 563px repeat-x, 
               linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444); /* Gradient colors */
-  background-position: 50%; /* Center the background */
-  background-size: 751px 563px; /* Size of the background image */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 563px;
+  max-height: 751px;
+  /* background-size: 751px 563px; Size of the background image */
   height: 105.5%; /* Increased height of the div */
   border-radius: 15px; /* Adjust the value for more or less rounding */
   overflow: hidden; /* Prevents overflow if the content exceeds the rounded corners */
