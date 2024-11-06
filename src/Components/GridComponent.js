@@ -318,32 +318,7 @@ const GridComponent = () => {
               and find trusted professionals near you. Simplify your service
               needs with Deskassure.
             </p>
-            // <div className="div-block-40">
-            //   <a
-            //     href=""
-            //     target="_blank"
-            //     className="w-inline-block"
-            //     rel="noopener noreferrer"
-            //   >
-            //     <img
-            //       src="https://grid.com/web/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
-            //       loading="lazy"
-            //       alt=""
-            //     />
-            //   </a>
-            //   <a
-            //     href=""
-            //     target="_blank"
-            //     className="google-play w-inline-block"
-            //     rel="noopener noreferrer"
-            //   >
-            //     <img
-            //       src="https://grid.com/web/images/en_badge_web_generic.png"
-            //       alt=""
-            //       className="image-29"
-            //     />
-            //   </a>
-            // </div>
+            
           </div>
         </div>
       </section>
