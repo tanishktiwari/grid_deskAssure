@@ -7575,19 +7575,36 @@ h3.heading-5.white {
     padding:0px 0px 0px 20px;
     width:100%;
 }
- .element-search-bar-fuel .filter-buttons .input-button{
-    background-color:var(--color-theme);
-    background-image:url('https://grid.com/data/images/search.png');
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:20px;
-    border-radius:50%;
-    height:34px;
-    position:absolute;
-    right:8px;
-    top:8px;
-    width:34px;
+.element-search-bar-fuel .filter-buttons .input-button {
+    background-color: var(--color-theme);
+    background-image: url('https://grid.com/data/images/search.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;  /* Use a percentage to scale image inside the button */
+    border-radius: 50%;
+    height: 34px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 34px;
 }
+
+@media (max-width: 623px) {
+    .element-search-bar-fuel .filter-buttons .input-button {
+        background-size: 5px;  /* Make the background image smaller for smaller screens */
+        height: 28px;           /* Optionally adjust button size for smaller screens */
+        width: 28px;            /* Adjust width to match */
+    }
+}
+
+@media (max-width: 480px) {
+    .element-search-bar-fuel .filter-buttons .input-button {
+        background-size: 18px;  /* Further adjust size for very small screens */
+        height: 24px;           /* Adjust the button size */
+        width: 24px;            /* Adjust the width to fit the new size */
+    }
+}
+
  @media(min-width:480px) {
      body .element-search-bar-fuel{
         padding:0px 20px 0px 20px;
@@ -7615,18 +7632,91 @@ h3.heading-5.white {
     position:relative;
     width:100%;
 }
- .element-search-bar .search-bar-grid{
-    background:#FFFFFF;
-    box-shadow:0 2px 5px rgba(0,0,0,.2);
-    border-radius:24px;
-    color:#989898;
-    display:flex;
-    height:48px;
-    min-width:80px;
-    padding:0px;
-    position:relative;
-    width:100%;
+ /* Default styles for larger screens */
+.element-search-bar .search-bar-grid {
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 24px;
+    color: #989898;
+    display: flex;
+    height: 48px;
+    min-width: 80px;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    flex-wrap: nowrap;  /* Prevent wrapping */
+    justify-content: space-between;  /* Space out items */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow */
 }
+
+/* Adjust styles for screens smaller than 626px */
+@media (max-width: 626px) {
+    .element-search-bar .search-bar-grid {
+        padding: 0px;  /* No padding */
+        width: 100%;   /* Ensure container stays within the viewport */
+        flex-wrap: nowrap;  /* Keep items in a row */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    /* Allow the elements to shrink and adjust based on available space */
+    .element-search-bar .search-bar-grid > * {
+        flex: 1 1 0;  /* Allow items to shrink/grow based on space */
+        max-width: 100%; /* Prevent overflow */
+        width: 0%;     /* Let them adjust their width based on content */
+        display: flex;   /* Flexbox behavior */
+        justify-content: center; /* Align horizontally */
+        align-items: center; /* Align vertically */
+        padding: 0px 6px;  /* Reduced padding */
+    }
+
+    /* Adjust the size of the search button and icons */
+    .element-search-bar .search-bar-grid .input-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;  /* Shrink size */
+        height: 28px; /* Shrink height */
+        font-size: 12px; /* Shrink font size */
+    }
+
+    /* Adjust specific grid items like filter buttons */
+    .element-search-bar .search-bar-grid > .border-one,
+    .element-search-bar .search-bar-grid > .filter-chargingspeed,
+    .element-search-bar .search-bar-grid > .border-two,
+    .element-search-bar .search-bar-grid > .filter-available {
+        display: flex;  /* Keep horizontal layout */
+        flex: 1 1 0;  /* Shrink/grow based on available space */
+        justify-content: center; /* Center content */
+        align-items: center; /* Center content vertically */
+        width: auto;   /* Adjust to content size */
+        padding: 0px 6px;  /* Reduced padding */
+        min-width: 0;  /* Prevent overflow if the items shrink */
+        font-size: 12px;  /* Reduce font size for smaller screens */
+    }
+
+    /* Optional: Add scaling for all items to make them smaller */
+    .element-search-bar .search-bar-grid > * {
+        transform: scale(0.85); /* Shrink all elements */
+    }
+}
+
+/* Adjust styles for screens smaller than 400px */
+@media (max-width: 400px) {
+    .element-search-bar .search-bar-grid > * {
+        font-size: 10px;  /* Shrink font size further */
+        transform: scale(0.75); /* Scale down items even more */
+        padding: 0px 4px;  /* Further reduce padding */
+    }
+
+    .element-search-bar .search-bar-grid .input-button {
+        width: 24px;  /* Further shrink size */
+        height: 24px; /* Further shrink height */
+        font-size: 10px; /* Shrink font size for icon */
+    }
+}
+
+
  .element-search-bar .search-bar-grid > *{
     position:relative;
 }
