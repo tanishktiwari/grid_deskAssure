@@ -1,12 +1,30 @@
+
+/* Global styles */
 .button-primary.on-green {
-    color: var(--0dbc81);
-    letter-spacing: 0;
-    text-transform: lowercase;
-    background-color: #fff;
     margin-top: -9px;
     position: absolute;
     margin-left: -18.5%;
 }
+
+/* Specific styles for screen widths <= 2915px */
+@media screen and (min-width: 807px) {
+    .button-primary.on-green {
+        margin-top: -12px;
+        position: absolute;
+        margin-left: -18.5%;
+    }
+}
+
+/* Styles for screens larger than 1440px */
+@media screen and (min-width: 1441px) {
+    .button-primary.on-green {
+        /* Adjust the 'top' and 'left' values for larger screens */
+        top: 0px; /* Adjust this value as needed */
+        left: -50px; /* Adjust this value as needed */
+        position: relative; /* You can modify this if needed */
+    }
+}
+
 h2.title.header {
     text-align: center;
     margin-left: 150px;
