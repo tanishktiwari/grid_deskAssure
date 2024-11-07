@@ -9,7 +9,7 @@
 /* Specific styles for screen widths <= 2915px */
 @media screen and (min-width: 807px) {
     .button-primary.on-green {
-        margin-top: -12px;
+        margin-top: -15px;
         position: absolute;
         margin-left: -18.5%;
     }
@@ -19,7 +19,7 @@
 @media screen and (min-width: 1441px) {
     .button-primary.on-green {
         /* Adjust the 'top' and 'left' values for larger screens */
-        top: 0px; /* Adjust this value as needed */
+        top: 25px; /* Adjust this value as needed */
         left: -50px; /* Adjust this value as needed */
         position: relative; /* You can modify this if needed */
     }
