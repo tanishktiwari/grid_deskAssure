@@ -1,3 +1,14 @@
+.element-header .element-header-nav-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 50%;  /* Fully rounded corners (circle if width=height) */
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  max-width: 100%;
+}
 
 /* Global styles */
 .button-primary.on-green {
@@ -6810,23 +6821,65 @@ h3.heading-5.white {
     position:relative;
     width:40px;
 }
- .element-header .element-header-nav-button::before{
-    bottom:0;
-    content:'\f0c9';
-    display:inline-block;
-    font-family:'Font Awesome 5 Free';
-    font-weight:900;
-    font-style:normal;
-    font-size:inherit;
-    font-variant:normal;
-    left:0;
-    line-height:inherit;
-    position:absolute;
-    text-align:center;
-    text-rendering:auto;
-    right:0;
-    top:0;
+.element-header .element-header-nav-button {
+  display: inline-flex;  /* Use flexbox for centering text */
+  justify-content: center; /* Center the text horizontally */
+  align-items: center;    /* Center the text vertically */
+  padding: 10px 20px;     /* Control padding for size */
+  border-radius: 50%; /* Use rounded-md for rounded corners */
+  text-decoration: none;  /* Remove underline from the link */
+  text-align: center;     /* Ensure text is centered */
+  width: 200px;           /* Set a fixed width (adjust this value) */
+  max-width: 100%;        /* Ensure it doesn't overflow the container */
 }
+
+.element-header .element-header-nav-button::before {
+  content: 'Go to Console';  /* The text content */
+  display: inline-block;     /* Make sure the text displays in one line */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;  /* Adjust font size as needed */
+  font-variant: normal;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;  /* Ensure it stretches across the entire button */
+  line-height: 1.5;  /* Adjust to make the text vertically centered */
+  text-align: center;
+  text-rendering: auto;
+  white-space: nowrap;  /* Prevent text from breaking onto a new line */
+  padding: 5px;  /* Add padding around the text */
+  width: 100%;   /* Ensure the text spans the button */
+}
+.element-header .element-header-nav-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 50%;  /* Fully rounded corners (circle if width=height) */
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  max-width: 100%;
+}
+
+
+
+.element-header .element-header-nav-button {
+  display: inline-block;  /* Keeps the button inline */
+  padding: 10px 20px;     /* Control padding for size */
+  border-radius: 5px;     /* Optional: If you want slightly rounded corners */
+  text-decoration: none;  /* Remove underline from the link */
+  text-align: center;     /* Ensure text is centered */
+  width: 100px;           /* Set a fixed width (adjust this value) */
+  max-width: 100%;        /* Ensure it doesn't overflow the container */
+
+}
+
+
+
  .element-header .element-header-nav.element-header-nav-active .element-header-nav-button{
     background-color:var(--color-gray);
     color:var(--color-white);
