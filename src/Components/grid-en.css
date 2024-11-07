@@ -26,7 +26,15 @@
         position: relative;  /* Keep the relative positioning */
     }
 }
-
+@media screen and (max-width: 757px) {
+    .image-16 {
+        /* Adjust the values for smaller screens */
+        align-self: center; /* Keep the alignment if needed */
+        top: -50px;          /* Modify the 'top' value as needed */
+        left: -80px;         /* Modify the 'left' value as needed */
+        position: relative;  /* Keep the relative positioning */
+    }
+}
 .div-block-16.image.zoek {
   background: url('../../public/desk_assure_laptop.gif') center center no-repeat, 
               linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444);
