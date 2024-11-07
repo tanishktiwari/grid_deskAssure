@@ -1,10 +1,17 @@
 import React from "react";
+import { useState } from "react";
 import "./components.css";
 import "./default.css";
 import "./grid-en.css";
 import "./normalize.css";
 
 const GridComponent = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setIsExpanded((prev) => !prev);
+  };
+
   return (
     <div>
       <div id="MENU-EN" className="navbar-logo-left">
@@ -14,7 +21,7 @@ const GridComponent = () => {
               <div className="element-header-logo">
                 <img
                   src="./Logo.png"
-                  className=""
+                  className="logo_image"
                   alt="Logo"
                   onClick={() =>
                     (window.location.href = "https://www.deskassure.com/")
@@ -42,7 +49,13 @@ const GridComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div className="element-header-nav-button" role="button"></div>
+                <a
+                  className="element-header-nav-button bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500 w-[100%] web-button web-button-theme"
+                  href="http://console.deskassure.com"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                  role="button"
+                ></a>
               </nav>
             </div>
           </div>
@@ -167,7 +180,7 @@ const GridComponent = () => {
                   open tickets are assigned captains ready to assist you.
                 </p>
               </div>
-              <a href="" className="button-primary on-green w-button ">
+              <a href="" className="button-primary on-green w-button">
                 <b>Track your Service Agent</b>
               </a>
             </div>
@@ -318,7 +331,32 @@ const GridComponent = () => {
               and find trusted professionals near you. Simplify your service
               needs with Deskassure.
             </p>
-            
+            {/* <div className="div-block-40">
+              <a
+                href=""
+                target="_blank"
+                className="w-inline-block"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://grid.com/web/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                className="google-play w-inline-block"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://grid.com/web/images/en_badge_web_generic.png"
+                  alt=""
+                  className="image-29"
+                />
+              </a>
+            </div> */}
           </div>
         </div>
       </section>
