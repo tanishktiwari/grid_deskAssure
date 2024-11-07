@@ -1,9 +1,32 @@
+/* Global styles - For screens up to 795px */
 .image-16 {
     align-self: center;
     top: -50px;
     left: -75px;
     position: relative;
+}
+
+/* Styles for screens above 795px */
+@media screen and (min-width: 796px) {
+    .image-16 {
+        /* Adjust the values for larger screens */
+        align-self: center; /* Keep the alignment if needed */
+        top: -26px;           /* Modify the 'top' value as needed */
+        left: 0px;          /* Modify the 'left' value as needed */
+        position: relative; /* Keep the relative positioning or change if needed */
     }
+}
+  /* Styles for screens less than 792px */
+@media screen and (max-width: 791px) {
+    .image-16 {
+        /* Adjust the values for smaller screens */
+        align-self: center; /* Keep the alignment if needed */
+        top: -50px;          /* Modify the 'top' value as needed */
+        left: -50px;         /* Modify the 'left' value as needed */
+        position: relative;  /* Keep the relative positioning */
+    }
+}
+
 .div-block-16.image.zoek {
   background: url('../../public/desk_assure_laptop.gif') center center no-repeat, 
               linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444);
@@ -15,15 +38,6 @@
   padding-bottom: 0;
 }
 
-
-
-/* .div-block-16.image.voorkeur {
-  background: url('https://grid.com/web/images/Choose-car.webp') center / 751px 563px repeat-x, 
-              linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444);
-  background-position: 50%;
-  background-size: 751px 563px;
-  height: 106%;
-} */
 .unique-div-voorkeur {
   background: url('../../public/image_lap_4.gif') center / 751px 563px repeat-x, 
               linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444); /* Gradient colors */
@@ -1889,7 +1903,7 @@ div#w-node-d00632f3-03fb-2032-d93a-9f5d59610c6d-117adce6 {
 
 .paragraph-7.black {
   color: white;
-
+  
 }
 
 .heading-5 {
@@ -7874,7 +7888,7 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 2915px) {
   .grid {
     flex: 1;
     display: block;
