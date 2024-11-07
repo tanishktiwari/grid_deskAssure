@@ -7632,7 +7632,7 @@ h3.heading-5.white {
     position:relative;
     width:100%;
 }
- /* Default styles for larger screens */
+ /* Default styling for search bar grid */
 .element-search-bar .search-bar-grid {
     background: #FFFFFF;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
@@ -7650,69 +7650,101 @@ h3.heading-5.white {
     overflow: hidden; /* Prevent overflow */
 }
 
-/* Adjust styles for screens smaller than 626px */
+/* Responsive adjustments for screen width below 627px */
 @media (max-width: 626px) {
     .element-search-bar .search-bar-grid {
-        padding: 0px;  /* No padding */
+        padding: 0px 10px;  /* Add some small padding for smaller screens */
         width: 100%;   /* Ensure container stays within the viewport */
         flex-wrap: nowrap;  /* Keep items in a row */
-        box-sizing: border-box; /* Include padding in width */
     }
 
-    /* Allow the elements to shrink and adjust based on available space */
-    .element-search-bar .search-bar-grid > * {
-        flex: 1 1 0;  /* Allow items to shrink/grow based on space */
-        max-width: 100%; /* Prevent overflow */
-        width: 0%;     /* Let them adjust their width based on content */
-        display: flex;   /* Flexbox behavior */
-        justify-content: center; /* Align horizontally */
-        align-items: center; /* Align vertically */
-        padding: 0px 6px;  /* Reduced padding */
+    /* Shrink the input field and dropdowns */
+    .input-destination,
+    .input-engineer,
+    .input-available {
+        padding: 8px 10px;  /* Reduce padding */
+        font-size: 12px;     /* Shrink font size */
+        height: 32px;        /* Reduce height */
+        width: 100%;         /* Ensure inputs are 100% wide */
+        box-sizing: border-box;  /* Include padding in width calculation */
     }
 
-    /* Adjust the size of the search button and icons */
-    .element-search-bar .search-bar-grid .input-button {
+    /* Adjust the dropdown's font size and height */
+    .input-engineer {
+        font-size: 12px;
+        height: 32px;
+    }
+
+    /* Adjust the checkbox switch */
+    .input-available-switch {
+        font-size: 12px;
+    }
+
+    /* Reduce the size of the search button */
+    .input-button {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 28px;  /* Shrink size */
         height: 28px; /* Shrink height */
-        font-size: 12px; /* Shrink font size */
+        font-size: 14px; /* Shrink font size */
     }
 
-    /* Adjust specific grid items like filter buttons */
-    .element-search-bar .search-bar-grid > .border-one,
-    .element-search-bar .search-bar-grid > .filter-chargingspeed,
-    .element-search-bar .search-bar-grid > .border-two,
-    .element-search-bar .search-bar-grid > .filter-available {
-        display: flex;  /* Keep horizontal layout */
-        flex: 1 1 0;  /* Shrink/grow based on available space */
-        justify-content: center; /* Center content */
-        align-items: center; /* Center content vertically */
-        width: auto;   /* Adjust to content size */
-        padding: 0px 6px;  /* Reduced padding */
-        min-width: 0;  /* Prevent overflow if the items shrink */
-        font-size: 12px;  /* Reduce font size for smaller screens */
+    /* Make borders thinner */
+    .border-one,
+    .border-two {
+        height: 32px; /* Adjust height of borders */
     }
 
-    /* Optional: Add scaling for all items to make them smaller */
+    /* Reduce margins and paddings for grid elements */
+    .filter-destination,
+    .filter-engineer,
+    .filter-available,
+    .filter-buttons {
+        padding: 0px 4px;  /* Reduce padding for smaller screens */
+    }
+
+    /* Allow elements to shrink and adjust based on available space */
     .element-search-bar .search-bar-grid > * {
-        transform: scale(0.85); /* Shrink all elements */
+        flex: 1 1 auto;  /* Allow items to shrink/grow based on space */
+        max-width: 100%; /* Prevent overflow */
+        display: flex;   /* Flexbox behavior */
+        justify-content: center; /* Align horizontally */
+        align-items: center; /* Align vertically */
+        padding: 0px 4px;  /* Reduced padding */
     }
 }
 
-/* Adjust styles for screens smaller than 400px */
-@media (max-width: 400px) {
-    .element-search-bar .search-bar-grid > * {
-        font-size: 10px;  /* Shrink font size further */
-        transform: scale(0.75); /* Scale down items even more */
+/* Further adjustments for smaller screens (below 442px) */
+@media (max-width: 442px) {
+    .input-destination,
+    .input-engineer,
+    .input-available {
+        font-size: 9px;  /* Further shrink font size */
+        height: 26px;     /* Reduce height further */
+        padding: 4px 6px; /* Adjust padding */
+    }
+
+    .input-button {
+        width: 20px;  /* Further shrink size */
+        height: 20px; /* Further shrink height */
+        font-size: 10px; /* Shrink font size for icon */
+    }
+
+    .element-search-bar .search-bar-grid {
         padding: 0px 4px;  /* Further reduce padding */
     }
 
-    .element-search-bar .search-bar-grid .input-button {
-        width: 24px;  /* Further shrink size */
-        height: 24px; /* Further shrink height */
-        font-size: 10px; /* Shrink font size for icon */
+    .border-one,
+    .border-two {
+        height: 26px; /* Reduce border height further */
+    }
+
+    /* Allow elements to shrink down further to fit in the grid */
+    .element-search-bar .search-bar-grid > * {
+        font-size: 9px;  /* Further reduce font size */
+        transform: scale(0.8); /* Shrink elements proportionally */
+        padding: 0px 4px;  /* Reduced padding */
     }
 }
 
