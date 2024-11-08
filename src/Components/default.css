@@ -9,6 +9,23 @@
   width: 200px;
   max-width: 100%;
 }
+/* Media query for screen size less than 425px */
+@media screen and (max-width: 424px) {
+  .element-footer .element-footer-nav-list {
+    grid-gap: 10px; /* Reduce gap for smaller screens */
+    justify-content: center; /* Center-align the items for smaller screens */
+    left: 13px; /* Reset the left position for a more centered layout */
+    position: relative;
+  }
+
+  .element-footer .element-footer-logo a {
+    height: 150px; /* Reduce the logo size */
+    width: 150px; /* Reduce the logo size */
+    right: 20px; /* Adjust logo position */
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 478px) {
   .element-search-bar .search-bar {
     display: block;
