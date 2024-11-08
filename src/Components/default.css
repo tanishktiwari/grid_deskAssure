@@ -9,6 +9,23 @@
   width: 200px;
   max-width: 100%;
 }
+@media screen and (max-width: 478px) {
+  .element-search-bar .search-bar {
+    display: block;
+    height: 48px;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    width: 100%;
+    top: -91%;
+  }
+}
+@media screen and (max-width: 478px) {
+    h2.title.header.raise {
+        margin-left: 100px !important; /* Forces the override */
+        padding-top: 10%;
+    }
+}
+
 
 /* Global styles */
 .button-primary.on-green {
