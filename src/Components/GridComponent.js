@@ -154,12 +154,12 @@ const GridComponent = () => {
           ></div>
           <div
             id="w-node-d00632f3-03fb-2032-d93a-9f5d59610c78-117adce6"
-            className="div-block-16 image zoek-unique" // Updated class name
+            className="div-block-16 image zoek-unique " // Updated class name
           >
             <img
-              src="https://grid.com/web/images/SEARCH.webp"
+              src="./desk_assure_laptop.gif"
               alt="Search"
-              className="search-image" // Keep the class for styling
+              className="search-image bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500" // Keep the class for styling
             />
           </div>
 
