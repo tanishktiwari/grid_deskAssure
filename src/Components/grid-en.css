@@ -1,3 +1,17 @@
+@media screen and (max-width: 478px) {
+  img.image-16.arrow-image {
+    left: 40%;
+    top: -130px;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  div#w-node-d00632f3-03fb-2032-d93a-9f5d59610c78-117adce6 {
+    margin-top: 3%;
+  }
+}
+
+
 /* Global styles - For screens up to 795px */
 .image-16 {
     align-self: center;
@@ -1646,7 +1660,7 @@ h3.heading-5.red.left.solutions {
 
 .div-block-16.no-background {
   background-color: #0000;
-  background-image: url('https://grid.com/web/images/Car.webp');
+  background-image: url('../../public/desk_assure_2.gif');
   background-position: 0 0;
   background-size: cover;
   width: 100%;
@@ -7045,7 +7059,7 @@ a {
   }
 
   .div-block-16.image.detail {
-    background-image: url('https://grid.com/web/images/Car.webp');
+    background-image: url('../../public/desk_assure_2.gif');
     background-position: 50% 100%;
     background-size: cover;
   }
@@ -9342,6 +9356,9 @@ a {
     max-width: none;
     margin-bottom: 10px;
     padding-bottom: 0;
+    left: -17%;
+    position: relative;
+    
   }
 
   .title.black {
