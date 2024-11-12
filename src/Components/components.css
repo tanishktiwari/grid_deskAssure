@@ -4,22 +4,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    img.logo_image {
-        margin-left: 20%; /* Adjust margin for smaller screens */
-        max-width: 80%;   /* Optional: change max width for smaller screens */
-    }
-}
-@media (max-width: 1439px) {
-    /* CSS styles for screen size less than 1440px */
-    .logo_image {
-        /* Adjust properties for smaller screens, like resizing the logo */
-        margin-left: 20%; /* Adjust margin for smaller screens */
-        max-width: 80%;   /* Optional: change max width for smaller screens */
-    }
-}
-
 [class^="w-icon-"],
 [class*=" w-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -71,7 +55,7 @@ body {
   color: #333;
 }
 img {
-  max-width: 100%;
+  max-width: 140%;
   vertical-align: middle;
   display: inline-block;
 }
