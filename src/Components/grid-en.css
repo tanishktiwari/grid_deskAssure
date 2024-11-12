@@ -51,24 +51,29 @@
 }
 
 .div-block-16.image.zoek {
-  background: url('../../public/desk_assure_laptop.gif') center center no-repeat, 
-              linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444);
+  background: url('../../public/desk_assure_laptop.gif') center center no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   max-width: 545px;
   max-height: 550px;
   padding-bottom: 0;
+  background-position: 50%;
+  background-size: 65%;
+  background-color: #C1F11D;
 }
 
+
 .unique-div-voorkeur {
-  background: url('../../public/image_lap_4.gif') center / 751px 563px repeat-x, 
-              linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444); /* Gradient colors */
+  background: url('../../public/image_lap_4.gif') center / 751px 563px repeat-x;
   background-position: center; /* Center the background */
   background-repeat: no-repeat;
   background-size: contain;
   max-width: 563px;
   max-height: 751px;
+  background-position: 50%;
+  background-size: 65%;
+  background-color: #C1F11D;
   /* background-size: 751px 563px; Size of the background image */
   height: 105.5%; /* Increased height of the div */
   border-radius: 15px; /* Adjust the value for more or less rounding */
@@ -89,8 +94,7 @@
   height: 105%;
 } */
 .unique-div-background {
-    background:
-        linear-gradient(to bottom left, #f59e0b, #f97316, #ef4444); /* Gradient background */
+    background:#C1F11D; /* Gradient background */
     background-repeat: no-repeat; /* Prevents background from repeating */
     background-position: center; /* Centers the background image */
     background-size: cover; /* Ensures the image covers the div */
@@ -493,10 +497,14 @@ strong {
   font-family: Source Sans Pro, sans-serif;
 }
 h2.title.zwart.Download {
-    color: white;
+    /* background: linear-gradient(to right, #5271ff, #cb6ce6); Gradient from dark teal to cyan-blue and back to dark teal */
+    /* -webkit-background-clip: text; For text color gradient */
+    color: #49527b; /* Make the text color transparent so the gradient shows */
 }
+
+
 h3.heading-5.red.left.solutions {
-    color: white;
+    color: #49527b;
 }
 
 .section-2.green {
@@ -1566,7 +1574,7 @@ h3.heading-5.red.left.solutions {
 }
 
 .div-block-16 {
-  background-color: var(--medium-sea-green);
+  /* background-color: var(--medium-sea-green); */
   border-radius: 20px;
   min-height: 40vh;
 }
@@ -1585,7 +1593,7 @@ h3.heading-5.red.left.solutions {
 }
 
 .div-block-16.image {
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-image: url('');
   background-position: 0 0;
   background-size: auto;
 }
@@ -1597,15 +1605,43 @@ h3.heading-5.red.left.solutions {
   background-size: contain;
 }
 
+/* Default (for all screen sizes, applies to the global styles) */
 .div-block-16.image.detail {
-  background-color: var(--white-smoke);
   background-image: url('../../public/desk_assure_2.gif');
-  background-position: 0 0;
+  background-position: center center;
   background-size: cover;
-  max-height: 700px;
-  /* height: 700px; */
-  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-color: var(--white-smoke);
+  width: 100%;
+  height: 100vh;
 }
+
+/* For smaller screens, e.g., phones */
+@media (max-width: 767px) {
+  .div-block-16.image.detail {
+    background-size: contain;  /* Use contain for smaller screens to prevent image cut-off */
+     /* Reduce height on mobile to save space */
+  }
+}
+
+/* For tablets and small devices (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .div-block-16.image.detail {
+    background-size: cover;  /* Keep cover for tablet devices */
+    /* height: 9vh;  Adjust height for tablets */
+  }
+  
+}
+
+/* For larger screens (desktop, etc.) */
+@media (min-width: 1025px) {
+  .div-block-16.image.detail {
+    background-size: cover;  /* Keep cover for larger screens */
+    height: 100vh;  /* Full height on desktop */
+  }
+}
+
+
 
 .div-block-16.image.rit {
   background-color: #0000;
@@ -1688,7 +1724,7 @@ h3.heading-5.red.left.solutions {
 }
 
 .container-10 {
-  background-color: #0000;
+  background-color: #C1F11D;
   border-radius: 20px;
   flex-direction: column;
   justify-content: flex-end;
@@ -1702,7 +1738,7 @@ h3.heading-5.red.left.solutions {
 }
 
 .container-10.header {
-  outline-color: #FF6F20;
+  outline-color: #C1F11D;
   outline-offset: 0px;
   color: var(--green);
   background-color: #0000;
@@ -1716,7 +1752,7 @@ h3.heading-5.red.left.solutions {
 }
 
 .container-10.header.centre {
-  outline-color: var(--medium-sea-green);
+  outline-color: #C1F11D;
   outline-offset: 0px;
   outline-width: 1.5px;
   outline-style: none;
@@ -1725,7 +1761,7 @@ h3.heading-5.red.left.solutions {
 }
 
 .container-10.header.green {
-  background-color: var(--medium-sea-green);
+  background-color: #C1F11D;
 }
 
 .container-10._2 {
@@ -1743,7 +1779,7 @@ h3.heading-5.red.left.solutions {
 }
 
 .container-10.map {
-  outline-color: #FF6F20;
+  outline-color: #C1F11D;
   outline-offset: 0px;
   text-align: center;
   background-color: #0000;
@@ -1767,11 +1803,11 @@ h3.heading-5.red.left.solutions {
 }
 
 .container-10.groen {
-  background-color: var(--medium-sea-green);
+  background-color: #C1F11D;
 }
 
 .container-10._5 {
-  background-color: var(--white-smoke);
+  background-color: #C1F11D;
 }
 
 .container-10.black {
@@ -1876,7 +1912,7 @@ strong.text-white.ideal {
     text-transform: none;
 }
 .section-2.black.clear.qaz {
-    margin-top: 40px;
+    margin-top: 5px;
 }
 div#w-node-d00632f3-03fb-2032-d93a-9f5d59610c6d-117adce6 {
     margin-top: 40px;
@@ -1925,7 +1961,7 @@ div#w-node-d00632f3-03fb-2032-d93a-9f5d59610c6d-117adce6 {
 }
 
 .paragraph-7.black {
-  color: white;
+  color: #49527b;;
   
 }
 
@@ -1933,9 +1969,10 @@ div#w-node-d00632f3-03fb-2032-d93a-9f5d59610c6d-117adce6 {
   color: var(--0dbc81);
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 300;
   line-height: 120%;
+  letter-spacing: -1px;
 }
 
 .heading-5.green {
@@ -1944,7 +1981,7 @@ div#w-node-d00632f3-03fb-2032-d93a-9f5d59610c6d-117adce6 {
 }
 
 .heading-5.green.centre {
-  color: #FF6F20;
+  color: #C1F11D;
 }
 
 .heading-5.green.links {
@@ -1975,7 +2012,7 @@ div#w-node-d00632f3-03fb-2032-d93a-9f5d59610c6d-117adce6 {
   margin-bottom: 10px;
   font-family: 'Poppins';
   font-size: 65px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 90%;
 }
 
@@ -7099,7 +7136,7 @@ a {
   }
 
   .container-10.header {
-    outline-color: var(--medium-sea-green);
+    outline-color: #C1F11D;
     outline-offset: 0px;
     text-align: left;
     outline-width: 1.5px;
@@ -7176,7 +7213,7 @@ a {
   }
 
   .title.zwart {
-    font-size: 45px;
+    font-size: 30px;
   }
 
   .title.header {
@@ -8229,15 +8266,17 @@ a {
   }
 
   .div-block-16, .div-block-16._2 {
-    min-height: 20vh;
+    min-height: 55vh;
   }
 
   .div-block-16.wit {
-    background-color: var(--medium-sea-green);
+    background-color: #C1F11D;
+    height: 106%;
   }
 
   .div-block-16.image.auto {
     background-repeat: repeat-x;
+    height: 400px;
   }
 
   .div-block-16.image.detail {
@@ -8267,7 +8306,7 @@ a {
   .grid-5 {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 
   .grid-5._4-blocks {
@@ -8279,7 +8318,7 @@ a {
   }
 
   .container-10._2 {
-    background-color: var(--medium-aquamarine);
+    background-color: #C1F11D;
   }
 
   .container-10.map {
@@ -8297,7 +8336,7 @@ a {
   }
 
   .container-10._5 {
-    background-color: var(--white-smoke);
+    background-color: #C1F11D;
   }
 
   .paragraph-7 {
@@ -8320,7 +8359,7 @@ a {
 
   .heading-5 {
     margin-top: 0;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .heading-5.green {
@@ -8365,7 +8404,7 @@ a {
   }
 
   .section-5 {
-    margin-top: -70px;
+    /* margin-top: -70px; */
   }
 
   .div-block-18 {
@@ -11232,5 +11271,5 @@ div#w-node-d00632f3-03fb-2032-d93a-9f5d59610c86-117adce6 {
 }
 h2.title {
     line-height: 109%;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
 }
