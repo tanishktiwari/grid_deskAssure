@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 1439px) {
+  .App {
+    width: 150%;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+
