@@ -37,12 +37,23 @@ const GridComponent = () => {
                       <ul className="element-header-nav-list" role="list">
                         <li className="element-header-nav-item">
                           <a
-                            className="web-button web-button-theme bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
+                            className="web-button web-button-theme "
                             href="http://console.deskassure.com"
                             rel="nofollow noopener noreferrer"
                             target="_blank"
+                            style={{
+                              backgroundColor: "transparent", // Corrected syntax for background-color
+                              backgroundImage: "url(/new_image_1.svg)", // Corrected string syntax for background image
+                              padding: "0 5px 10px",
+                              backgroundRepeat: "no-repeat",
+                              backgroundPosition: "50%",
+                              backgroundSize: "150% 100%",
+                              color: "var(--main-dark)",
+                            }}
                           >
-                            Go to Console
+                            <span className="text-textcolor">
+                              Go to Console
+                            </span>
                           </a>
                         </li>
                       </ul>
@@ -72,7 +83,7 @@ const GridComponent = () => {
                 <div className="search-bar-grid" id="search-form">
                   <div className="filter-destination">
                     <input
-                      className="input-destination"
+                      className="input-destination font-poppins"
                       id="destination"
                       maxLength="255"
                       placeholder="Enter Ticket Number"
@@ -81,19 +92,22 @@ const GridComponent = () => {
                     />
                   </div>
                   <div className="border-one"></div>
-                  <div className="filter-engineer mt-2 text-lg">
-                    <select className="input-engineer" id="engineer-select">
-                      <option value="">-- Select Engineer --</option>
+                  <div className="filter-engineer mt-2 text-lg font-poppins">
+                    <select
+                      className="input-engineer"
+                      id="engineer-select"
+                      disabled
+                    >
+                      <option value="">Select Engineer</option>
                       <option value="engineer1">Engineer 1</option>
                       <option value="engineer2">Engineer 2</option>
                       <option value="engineer3">Engineer 3</option>
                       <option value="engineer4">Engineer 4</option>
-                      {/* Add more engineers as needed */}
                     </select>
                   </div>
 
                   <div className="border-two"></div>
-                  <div className="filter-available">
+                  <div className="filter-available font-poppins">
                     <label className="label-available" htmlFor="available">
                       Ticket Status
                     </label>
@@ -126,13 +140,71 @@ const GridComponent = () => {
           <div
             id="w-node-d00632f3-03fb-2032-d93a-9f5d59610c6d-117adce6"
             className="div-block-16 _2"
+            style={{ marginBottom: "4%" }}
           >
-            <div className="container-10 header w-container qwerty">
-              <h2 className="title header raise">You raise service ticket</h2>
-              <h3 className="heading-5 green centre">
-                we give you all updates until the ticket is resolved
+            <div className="container-10 header w-container  qwerty font-poppins">
+              <h2
+                className="font-poppins text-center mb-4 text-gray-600 tracking-tight"
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: "600",
+                  color: "#49527b",
+                  fontSize: "53px",
+                  letterSpacing: "1%",
+                }}
+              >
+                You raise service ticket
+              </h2>
+              <h3
+                className="heading-5 green centre font-poppins"
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: "400",
+                  fontSize: "20px",
+                  textAlign: "center",
+                  backgroundColor: "transparent", // Transparent background to allow image
+                  padding: "10px 20px", // Adjust padding to increase height and width to match the text size
+                  color: "#49527b", // Text color
+                  display: "inline-block", // Ensure button aligns properly
+                  textDecoration: "none", // Remove underline for the link
+                  borderRadius: "8px", // Optional: Rounded corners
+                  position: "relative", // Allow positioning of pseudo-element
+                  overflow: "hidden", // Prevent background image from overflowing the button area
+                }}
+              >
+                We give you all updates until the ticket is resolved
+                <style>
+                  {`
+      h3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(/new_image_1.svg); /* Path to your image */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25%; /* Adjust size as needed */
+        transform: rotate(356deg); /* Rotate the background image */
+        z-index: -1; /* Ensure text stays on top */
+      }
+    `}
+                </style>
               </h3>
-              <p className="paragraph-7 white map">
+
+              <p
+                className="paragraph-7 white map"
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: "200",
+                  color: "#49527b",
+                  fontSize: "15px",
+                  textAlign: "center",
+                  marginLeft: "12%",
+                  marginRight: "12%",
+                }}
+              >
                 Stay informed at every step of the way. With Deskassure, you'll
                 receive timely updates via WhatsApp and email about the progress
                 of your service ticket. Our automated process will keep you
@@ -142,68 +214,172 @@ const GridComponent = () => {
               <a
                 href=""
                 className="button-primary w-button bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500 raise button"
+                style={{
+                  backgroundColor: "transparent", // Transparent background to allow image
+                  backgroundImage: "url()", // Path to the background image
+                  padding: "10px 20px", // Adjust padding to increase height and width to match the text size
+                  backgroundRepeat: "no-repeat", // No repeating background
+                  backgroundPosition: "center", // Center the image within the button
+                  backgroundSize: "92%", // Cover the entire area of the button with the image
+                  color: "var(--main-dark)", // Text color
+                  display: "inline-block", // Ensure button aligns properly
+                  textDecoration: "none", // Remove underline for the link
+                  borderRadius: "8px", // Optional: Rounded corners
+                  textAlign: "center", // Center the text inside the button
+                  lineHeight: "1.5", // Adjust line height for better text alignment
+                }}
               >
-                Interested in DeskAssure?{" "}
-                <strong className="text-white">Watch a Demo Video</strong>.
+                Interested in DeskAssure?{""}
+                <strong
+                  className=""
+                  style={{
+                    backgroundColor: "transparent", // Transparent background to allow image
+                    backgroundImage: "url(/new_image_2.svg)", // Path to the background image
+                    padding: "10px 20px", // Adjust padding to increase height and width to match the text size
+                    backgroundRepeat: "no-repeat", // No repeating background
+                    backgroundPosition: "center", // Center the image within the button
+                    backgroundSize: "92%", // Cover the entire area of the button with the image
+                    color: "#49527b", // Text color
+                    display: "inline-block", // Ensure button aligns properly
+                    textDecoration: "none", // Remove underline for the link
+                    borderRadius: "8px", // Optional: Rounded corners
+                    textAlign: "center", // Center the text inside the button
+                    lineHeight: "1.5", // Adjust line height for better text alignment
+                  }}
+                >
+                  Watch a Demo Video
+                </strong>
+                .
               </a>
             </div>
           </div>
           <div
             id="w-node-d00632f3-03fb-2032-d93a-9f5d59610c77-117adce6"
             className="div-block-16 image zoek hello-block"
+            style={{
+              height: "350px", // Set a fixed height for the image container
+              width: "100%", // Ensure it takes up the full width
+              backgroundImage: "url(/desk_assure_laptop.gif)", // Add a background image (optional)
+              backgroundSize: "70%", // Cover the entire div with the image
+              backgroundPosition: "center", // Center the image
+              backgroundRepeat: "no-repeat", // Prevent the image from repeating
+              display: "flex", // Use flexbox to center content
+              justifyContent: "center", // Horizontally center content
+              alignItems: "center", // Vertically center content
+            }}
           ></div>
+
           <div
             id="w-node-d00632f3-03fb-2032-d93a-9f5d59610c78-117adce6"
-            className="div-block-16 image zoek-unique " // Updated class name
+            className=""
+            style={{
+              height: "500px", // Set the height to 300px for both divs
+              width: "100%", // Ensure full width
+              display: "flex", // Flexbox to center content
+              justifyContent: "center", // Center horizontally
+              alignItems: "center", // Center vertically
+              overflow: "hidden", // Hide anything that overflows
+              backgroundColor: "#C1F11D", // Background color
+              backgroundImage: "url('./image_lap_4.gif')", // Set the background image
+              backgroundSize: "50%", // Set the background size to 50% of the div
+              backgroundRepeat: "no-repeat", // Prevent background image from repeating
+              backgroundPosition: "center", // Center the background image
+              borderRadius: "15px",
+            }}
           >
             <img
-              src="./desk_assure_laptop.gif"
+              src="./image_lap_4.gif"
               alt="Search"
-              className="search-image bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500" // Keep the class for styling
+              className="search-image"
+              style={{
+                maxWidth: "100%", // Ensure the image does not exceed the width of the div
+                maxHeight: "100%", // Ensure the image does not exceed the height of the div
+                width: "auto", // Maintain aspect ratio
+                height: "auto", // Maintain aspect ratio
+              }}
             />
           </div>
 
           <div
             id="w-node-d00632f3-03fb-2032-d93a-9f5d59610c79-117adce6"
             className="div-block-16 wit"
+            style={{
+              height: "350px", // Set the same height as the first div
+              backgroundColor: "transparent", // Transparent background for the text container
+              display: "flex", // Use flexbox for layout
+              flexDirection: "column", // Stack elements vertically
+              justifyContent: "center", // Center the text vertically
+              alignItems: "center", // Center the text horizontally
+              textAlign: "center", // Center align the text content
+            }}
           >
-            <div className="container-10 bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500 w-container">
+            <div className="container-10 w-container font-poppins">
               <div>
-                <h1 className="title">Locate your service captains</h1>
-                <h2 className="heading-5">around you</h2>
+                <h1
+                  className="title font-poppins"
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontWeight: "600",
+                    color: "#49527b",
+                    fontSize: "53px",
+                    letterSpacing: "-2px",
+                  }}
+                >
+                  Locate your service captains
+                </h1>
+                <h2
+                  className="heading-5 font-poppins"
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontWeight: "400",
+                    fontSize: "20px",
+                    color: "#49527b",
+                  }}
+                >
+                  around you
+                </h2>
               </div>
               <div>
-                <p className="paragraph-7">
+                <p
+                  className="paragraph-7 font-poppins"
+                  style={{
+                    fontFamily: "Poppins, sans-serif",
+                    fontWeight: "200",
+                    color: "#49527b",
+                    fontSize: "15px",
+                  }}
+                >
                   Looking for a service captain near you? Easily locate our
                   service professionals using Deskassure. Simply enter your
                   Ticket number, and we'll provide you with a list of all the
-                  open tickets are assigned captains ready to assist you.
+                  open tickets assigned to captains ready to assist you.
                 </p>
               </div>
-              <a href="" className="button-primary on-green w-button">
-                <b>Track your Service Agent</b>
+              <a
+                href=""
+                className="button-primary on-green w-button font-poppins"
+                style={{
+                  backgroundColor: "transparent", // Transparent background to allow image
+                  backgroundImage: "url(/1.svg)", // Path to the background image
+                  padding: "10px 20px", // Adjust padding to match the button size
+                  backgroundRepeat: "no-repeat", // No repeating background image
+                  backgroundPosition: "center", // Center the image inside the button
+                  backgroundSize: "120%", // Increase the background image size
+                  color: "var(--main-dark)", // Text color
+                  display: "inline-block", // Ensure the button is aligned properly
+                  textDecoration: "none", // Remove underline
+                  borderRadius: "8px", // Optional: Add rounded corners
+                  textAlign: "center", // Center the text inside the button
+                  lineHeight: "1.5", // Adjust line height for better text alignment
+                }}
+              >
+                <span className="text-customcolor font-semibold tracking-tight">
+                  <span className="uppercase">T</span>rack your Service Agent
+                </span>
               </a>
             </div>
           </div>
-          <div
-            id="w-node-d00632f3-03fb-2032-d93a-9f5d59610c85-117adce6"
-            className="div-block-16 image detail"
-          ></div>
-          <div
-            id="w-node-d00632f3-03fb-2032-d93a-9f5d59610c86-117adce6"
-            className="rahul container-10 _2 w-container bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
-          >
-            <h2 className="title zwart now">Now enjoy Zero Downtime</h2>
-            <h3 className="heading-5 white">With DeskAssure ZERO</h3>
-            <p className="paragraph-7 black font-bold">
-              Experience personalized support like never before. Our
-              customizable support console allows you to tailor your
-              interactions with customers, making them feel valued and
-              understood. From personalized greetings to tailored
-              recommendations, we'll help you create a truly unique and
-              satisfying support experience.
-            </p>
-          </div>
+
           <div
             id="w-node-d00632f3-03fb-2032-d93a-9f5d59610c8d-117adce6"
             className="unique-div-voorkeur"
@@ -211,13 +387,52 @@ const GridComponent = () => {
 
           <div
             id="w-node-d00632f3-03fb-2032-d93a-9f5d59610c8e-117adce6"
-            className="container-10 groen w-container bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
+            className="container-10 groen w-container"
+            style={{
+              height: "500px", // Set the same height as the first div
+              display: "flex", // Flexbox for centering content
+              flexDirection: "column", // Stack content vertically
+              justifyContent: "center", // Center content vertically
+              alignItems: "center", // Center content horizontally
+              padding: "10px", // Optional padding
+            }}
           >
-            <h2 className="title">Knowledgebase & FAQs</h2>
-            <h3 className="heading-5">
+            <h2
+              className="title font-poppins"
+              style={{
+                textAlign: "center",
+                fontFamily: "Poppins, sans-serif",
+                fontWeight: "600",
+                color: "#49527b",
+                fontSize: "43px",
+              }}
+            >
+              Knowledgebase & FAQs
+            </h2>
+            <h3
+              className="heading-5 font-poppins"
+              style={{
+                textAlign: "center",
+                fontSize: "20px",
+                fontWeight: "400",
+                color: "#49527b",
+              }}
+            >
               and a lot of DIY stuff at your fingertips
             </h3>
-            <p className="paragraph-7">
+            <p
+              className="paragraph-7 font-poppins"
+              style={{
+                fontFamily: "Poppins, sans-serif",
+                fontWeight: "200",
+                color: "#49527b",
+                fontSize: "13px",
+                textAlign: "center",
+                paddingLeft: "4.5%",
+                paddingRight: "4.5%",
+                paddingTop: "2%",
+              }}
+            >
               Empower yourself with our personalized knowledgebase and DIY
               videos. Access tailored solutions and step-by-step guides designed
               to help you resolve common issues independently. Learn at your own
@@ -227,7 +442,18 @@ const GridComponent = () => {
           </div>
         </div>
       </section>
-      <div className="section-2 black clear qaz">
+      <div
+        className="section-2 black clear qaz"
+        style={{
+          backgroundImage: "url('/tag.svg')", // Path to your SVG image
+          backgroundSize: "28%", // Ensure the image covers the entire background
+          backgroundPosition: "center", // Center the background image
+          backgroundRepeat: "no-repeat", // Prevent the background image from repeating
+          height: "50vh",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
         <div className="container-10 map w-container">
           <a
             href=""
@@ -235,8 +461,22 @@ const GridComponent = () => {
             className="link-block-5 w-inline-block"
             rel="noopener noreferrer"
           >
-            <div className="div-block-17">
-              <h2 className="title header">Go to DeskAssure Live Locator</h2>
+            <div
+              className="div-block-17"
+              style={{ paddingLeft: "0", marginLeft: "0" }}
+            >
+              <h2
+                className="title header font-poppins"
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: "600",
+                  color: "#49527b",
+                  fontSize: "53px",
+                  textAlign: "center",
+                }}
+              >
+                Go to DeskAssure Live Locator
+              </h2>
               <img
                 src="https://grid.com/web/images/np_up_1581624_0DBC81.svg"
                 width="58"
@@ -244,119 +484,236 @@ const GridComponent = () => {
                 className="image-16 arrow-image"
                 style={{
                   filter:
-                    "invert(56%) sepia(76%) saturate(389%) hue-rotate(6deg) brightness(97%) contrast(93%)",
+                    "invert(48%) sepia(91%) saturate(640%) hue-rotate(57deg) brightness(94%) contrast(91%)",
                 }}
               />
             </div>
           </a>
-          <div className="div-block-18">
-            <p className="paragraph-7 white map centre">
+
+          <div
+            className="div-block-18"
+            style={{ paddingLeft: "0", marginLeft: "0" }}
+          >
+            <p
+              className="paragraph-7 white map centre font-poppins"
+              style={{
+                fontFamily: "Poppins, sans-serif",
+                fontWeight: "200",
+                color: "#49527b",
+                fontSize: "15px",
+                textAlign: "center",
+                marginLeft: "12%",
+                marginRight: "12%",
+              }}
+            >
               With one simple click, we connect and give your visibility to the
               nearest service captains in your area. No more hassle with endless
               searching and guessing and waiting for help. Our integrated map
               feature puts you in control and lets you quickly find the solution
               to all your problems.
             </p>
-            <a
-              href="http://console.deskassure.com"
-              rel="nofollow noopener noreferrer"
-              target="_blank"
-            >
-              <strong className="text-white ideal">
-                Open your first Deskassure Ticket now
-              </strong>
-            </a>
+            <div style={{ marginBottom: "10%" }}>
+              <a
+                href="http://console.deskassure.com"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                <strong
+                  className="ideal font-poppins"
+                  style={{ color: "rgb(73, 82, 123)" }}
+                >
+                  Open your first Deskassure Ticket now
+                </strong>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <section className="section6">
-        <div className="w-layout-grid grid-5 _4-blocks">
-          <div
-            id="w-node-fa78de3b-bb1f-9f6d-38d5-51cb56632550-117adce6"
-            className="div-block-16 image koffie bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
-          ></div>
-          <div
-            id="w-node-_596b18d4-2bc5-7cc5-0ef0-38855c1ced5f-117adce6"
-            className="div-block-16 wit"
-          >
-            {/* <div className="container-10 w-container">
-              <div>
-                <h2 className="title">Fancy a coffee?</h2>
-                <h3 className="heading-5">or a place to recharge yourself?</h3>
-              </div>
-              <div>
-                <p className="paragraph-7">
-                  Recharge yourself with a delicious cup of coffee and discover
-                  the perfect restaurants and stores near your favorite charging
-                  station. Don&#x27;t just charge your car, make your charging
-                  moment an opportunity to enjoy all that the area has to offer.
-                </p>
-              </div>
-              <a
-                href="https://app.grid.com"
-                target="_blank"
-                className="button-primary on-green w-button"
-                rel="noopener noreferrer"
-              >
-                view amenities nearby
-              </a>
-            </div> */}
-          </div>
-          <div
-            id="w-node-f54bfbb0-2421-5312-840b-3ecae3303885-117adce6"
-            className="unique-div-background"
-          >
-            <img
-              src="./desk_assure_3.gif"
-              alt="Descriptive Alt Text"
-              className="overlay-image"
-            />
-          </div>
 
+      <section className="section6" style={{ marginTop: "25px" }}>
+        <div className="">
           <div
             id="w-node-_81fae34e-2068-60c8-1384-3531e3285d04-e3285d04"
-            className="container-10 _5 w-container bg-gradient-to-bl from-yellow-500 via-orange-500 to-red-500"
+            className="container-10 _5 w-container"
+            style={{
+              backgroundColor: "#fffee9", // Background color (optional)
+              backgroundImage: "url(/tick.svg)", // Path to your image
+              backgroundRepeat: "no-repeat", // Prevent image from repeating
+              backgroundPosition: "center", // Center the image
+              backgroundSize: "80% 80%", // Reduce the image size (30% width and 30% height)
+              height: "80vh", // Set height to 80% of the viewport height
+              marginBottom: "0px", // Optional: Adjust margin as needed
+            }}
           >
-            <h2 className="title zwart Download">
+            <h2
+              className="title zwart Download pl-3 pr-3"
+              style={{
+                textAlign: "center",
+                fontSize: "53px",
+                fontWeight: "600",
+                marginTop: "15%",
+              }}
+            >
               Download the DeskAssure app
             </h2>
-            <h3 className="heading-5 red left solutions">
-              Raise Ticket, find solutions, get notified in real time and chat
-              with the live agents
+
+            <h3
+              className="heading-5 red left solutions font-poppins pl-3 pr-3"
+              style={{
+                textAlign: "center",
+                fontSize: "25px",
+                marginLeft: "15.85%",
+                marginRight: "15.85%",
+              }}
+            >
+              Raise Ticket, find solutions, get notified in real time and <br />
+              chat with the live agents
             </h3>
-            <p className="paragraph-7 black">
-              Experience seamless service requests with Deskassure. Raise
-              tickets, track progress, and get real-time updates. Connect with
-              live agents for personalized support. Explore our knowledgebase
-              and find trusted professionals near you. Simplify your service
-              needs with Deskassure.
-            </p>
-            {/* <div className="div-block-40">
-              <a
-                href=""
-                target="_blank"
-                className="w-inline-block"
-                rel="noopener noreferrer"
+            <p
+              className="paragraph-7 black font-poppins pl-3 pr-3"
+              style={{ textAlign: "right" }}
+            ></p>
+
+            {/* Added Company Numbers Section Below */}
+            <div
+              className="company-numbers-wrap"
+              style={{
+                backgroundColor: "#0000",
+                borderRadius: "2em",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "100%",
+                display: "flex",
+              }}
+            >
+              <div
+                className="number-wrap"
+                style={{
+                  gridColumnGap: ".5em",
+                  gridRowGap: ".5em",
+                  flexFlow: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
+                  paddingLeft: "2em",
+                  paddingRight: "2em",
+                  display: "flex",
+                }}
               >
-                <img
-                  src="https://grid.com/web/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
-                  loading="lazy"
-                  alt=""
-                />
-              </a>
-              <a
-                href=""
-                target="_blank"
-                className="google-play w-inline-block"
-                rel="noopener noreferrer"
+                <h1
+                  className="number-title font-poppins"
+                  style={{
+                    fontSize: "4em",
+                    fontWeight: "700",
+                    color: "#49527b",
+                  }}
+                >
+                  $100M
+                </h1>
+                <div
+                  className="number-text"
+                  style={{
+                    color: "var(--color--black)",
+                    textAlign: "center",
+                    maxWidth: "300px",
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "1em",
+                    fontWeight: "300",
+                    lineHeight: "1.5",
+                    marginTop: "-7%",
+                    color: "#49527b",
+                  }}
+                >
+                  Investment in promising
+                  <br />
+                  companies
+                </div>
+              </div>
+              <div
+                className="number-wrap"
+                style={{
+                  gridColumnGap: ".5em",
+                  gridRowGap: ".5em",
+                  flexFlow: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
+                  paddingLeft: "2em",
+                  paddingRight: "2em",
+                  display: "flex",
+                }}
               >
-                <img
-                  src="https://grid.com/web/images/en_badge_web_generic.png"
-                  alt=""
-                  className="image-29"
-                />
-              </a>
-            </div> */}
+                <h1
+                  className="number-title font-poppins"
+                  style={{
+                    fontSize: "4em",
+                    fontWeight: "700",
+                    color: "#49527b",
+                  }}
+                >
+                  200M+
+                </h1>
+                <div
+                  className="number-text"
+                  style={{
+                    color: "var(--color--black)",
+                    textAlign: "center",
+                    maxWidth: "300px",
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "1em",
+                    fontWeight: "300",
+                    lineHeight: "1.5",
+                    marginTop: "-7%",
+                    color: "#49527b",
+                  }}
+                >
+                  inDrive Downloads. Access to inDrive’s geo-distributed monthly
+                  active user base and brand
+                </div>
+              </div>
+              <div
+                className="number-wrap"
+                style={{
+                  gridColumnGap: ".5em",
+                  gridRowGap: ".5em",
+                  flexFlow: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
+                  paddingLeft: "2em",
+                  paddingRight: "2em",
+                  display: "flex",
+                }}
+              >
+                <h1
+                  className="number-title font-poppins"
+                  style={{
+                    fontSize: "4em",
+                    fontWeight: "700",
+                    color: "#49527b",
+                  }}
+                >
+                  45+
+                </h1>
+                <div
+                  className="number-text"
+                  style={{
+                    color: "var(--color--black)",
+                    textAlign: "center",
+                    maxWidth: "300px",
+                    fontFamily: "Poppins, sans-serif",
+                    fontSize: "1em",
+                    fontWeight: "300",
+                    lineHeight: "1.5",
+                    marginTop: "-7%",
+                    color: "#49527b",
+                  }}
+                >
+                  Potential countries for entry. Localized support "on the
+                  ground" in various areas
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -377,31 +734,100 @@ const GridComponent = () => {
                         href="http://console.deskassure.com"
                         rel="nofollow noopener noreferrer"
                         target="_blank"
+                        className="font-poppins"
+                        style={{
+                          backgroundColor: "transparent", // Corrected syntax for background-color
+                          backgroundImage: "url(/new_image_1.svg)", // Corrected string syntax for background image
+                          padding: "0 5px 10px",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "50%",
+                          backgroundSize: "100% 100%",
+                          color: "var(--main-dark)",
+                        }}
                       >
-                        Go to Console
+                        <span className="text-textcolor ">Go to Console</span>
                       </a>
                     </li>
 
-                    <li className="element-footer-nav-item">
-                      <a href="">Blogs</a>
+                    <li className="element-footer-nav-item font-poppins">
+                      <a
+                        href=""
+                        style={{
+                          backgroundColor: "transparent", // Corrected syntax for background-color
+                          backgroundImage: "url(/new_image_1.svg)", // Corrected string syntax for background image
+                          padding: "0 5px 10px",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "50%",
+                          backgroundSize: "150% 100%",
+                          color: "var(--main-dark)",
+                        }}
+                      >
+                        <span className="text-textcolor">Blogs</span>
+                      </a>
+                    </li>
+                    <li className="element-footer-nav-item font-poppins">
+                      <a
+                        href=""
+                        style={{
+                          backgroundColor: "transparent", // Corrected syntax for background-color
+                          backgroundImage: "url(/new_image_1.svg)", // Corrected string syntax for background image
+                          padding: "0 5px 10px",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "50%",
+                          backgroundSize: "150% 100%",
+                          color: "var(--main-dark)",
+                        }}
+                      >
+                        <span className="text-textcolor ">Subscribe</span>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="element-footer-bottom">
-                <div className="element-footer-reserved">
+                <div className="element-footer-reserved font-poppins">
                   © 2024 DeskAssure All rights reserved.
                 </div>
                 <ul className="element-footer-legal-links">
-                  <li className="element-footer-legal-links-item">
-                    <a href="">Terms and conditions</a>
+                  <li className="element-footer-legal-links-item font-poppins">
+                    <a
+                      href=""
+                      style={{
+                        backgroundColor: "transparent", // Corrected syntax for background-color
+                        backgroundImage: "url(/new_image_2.svg)", // Corrected string syntax for background image
+                        padding: "0 5px 10px",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "50%",
+                        backgroundSize: "80% 300%",
+                        color: "var(--main-dark)",
+                      }}
+                    >
+                      <span className="text-textcolor">
+                        Terms and conditions
+                      </span>
+                    </a>
                   </li>
-                  <li className="element-footer-legal-links-item">
-                    <a href="">Privacy &amp; cookie policy</a>
+                  <li className="element-footer-legal-links-item font-poppins">
+                    <a
+                      href=""
+                      style={{
+                        backgroundColor: "transparent", // Corrected syntax for background-color
+                        backgroundImage: "url(/new_image_2.svg)", // Corrected string syntax for background image
+                        padding: "0 5px 10px",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "50%",
+                        backgroundSize: "80% 300%",
+                        color: "var(--main-dark)",
+                      }}
+                    >
+                      <span className="text-textcolor">
+                        Privacy &amp; cookie policy
+                      </span>
+                    </a>
                   </li>
                   <li className="element-footer-legal-links-item element-language-selector">
                     <div className="language-selector-wrapper">
-                      <div className="language-selector-label">
+                      <div className="language-selector-label font-poppins">
                         Selected language:
                       </div>
                       <div
@@ -419,10 +845,10 @@ const GridComponent = () => {
                       >
                         <div className="language-selector-popup-wrapper">
                           <div className="language-selector-popup-close"></div>
-                          <div className="language-selector-popup-title">
+                          <div className="language-selector-popup-title font-poppins">
                             Select country or language
                           </div>
-                          <div className="language-selector-popup-description">
+                          <div className="language-selector-popup-description font-poppins">
                             Current language:{" "}
                             <span
                               className="language-selector-popup-current"
@@ -433,7 +859,7 @@ const GridComponent = () => {
                           </div>
                           <div className="language-selector-popup-list">
                             <div
-                              className="language-selector-popup-option language-selector-popup-option-active language-selector-flag"
+                              className="language-selector-popup-option language-selector-popup-option-active language-selector-flag font-poppins"
                               style={{
                                 "--background-image":
                                   "url('https://grid.com/images/flags/US.png')",
@@ -450,7 +876,9 @@ const GridComponent = () => {
                               }}
                               lang="nl-nl"
                             >
-                              <a href="">Nederlands</a>
+                              <a href="" className="font-poppins">
+                                Nederlands
+                              </a>
                             </div>
                           </div>
                         </div>
