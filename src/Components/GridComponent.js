@@ -608,7 +608,7 @@ const GridComponent = () => {
                     color: "#49527b",
                   }}
                 >
-                  $100M
+                  5000
                 </h1>
                 <div
                   className="number-text"
@@ -624,7 +624,7 @@ const GridComponent = () => {
                     color: "#49527b",
                   }}
                 >
-                  Investment in promising
+                  Tickets raised per month
                   <br />
                   companies
                 </div>
@@ -651,7 +651,7 @@ const GridComponent = () => {
                     color: "#49527b",
                   }}
                 >
-                  200M+
+                  100+
                 </h1>
                 <div
                   className="number-text"
@@ -667,8 +667,7 @@ const GridComponent = () => {
                     color: "#49527b",
                   }}
                 >
-                  inDrive Downloads. Access to inDrive’s geo-distributed monthly
-                  active user base and brand
+                  Organisations Registered
                 </div>
               </div>
               <div
@@ -693,7 +692,7 @@ const GridComponent = () => {
                     color: "#49527b",
                   }}
                 >
-                  45+
+                  20000
                 </h1>
                 <div
                   className="number-text"
@@ -709,8 +708,7 @@ const GridComponent = () => {
                     color: "#49527b",
                   }}
                 >
-                  Potential countries for entry. Localized support "on the
-                  ground" in various areas
+                  Whatsapp API hits per week
                 </div>
               </div>
             </div>
