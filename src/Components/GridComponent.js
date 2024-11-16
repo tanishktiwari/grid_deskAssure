@@ -641,6 +641,7 @@ const GridComponent = () => {
                   paddingLeft: "2em",
                   paddingRight: "2em",
                   display: "flex",
+                  marginTop: "-20px"
                 }}
               >
                 <h1
@@ -682,6 +683,7 @@ const GridComponent = () => {
                   paddingLeft: "2em",
                   paddingRight: "2em",
                   display: "flex",
+                  marginTop: "-20px"
                 }}
               >
                 <h1
